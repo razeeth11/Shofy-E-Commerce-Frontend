@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Jost", sans-serif !important;
+}
+
+.flexContainerBasicRow {
+  display: flex;
+  align-items: center;
+}
+.flexContainerBasicColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexContainerJustify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
