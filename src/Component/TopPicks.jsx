@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const TopPicks = () => {
   const topPicksCategories = [
     {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fgg9yCwX%2Fclothing-1.png&w=640&q=75",
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FxXHLYZr%2Fclothing-5.png&w=384&q=75",
       text: "Clothing",
       link: "#",
     },
@@ -20,7 +20,7 @@ export const TopPicks = () => {
       link: "#",
     },
     {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fgg9yCwX%2Fclothing-1.png&w=640&q=75",
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FxXHLYZr%2Fclothing-5.png&w=384&q=75",
       text: "Clothing",
       link: "#",
     },
@@ -92,11 +92,8 @@ export const TopPicks = () => {
                 Shop Now &nbsp; <ArrowRightAltIcon sx={{ fontSize: "30px" }} />
               </Button>
             </Grid>
-            <Grid>
-              <img
-                src={item.img}
-                style={{ width: "250px", height: "230px", objectFit: "cover" }}
-              />
+            <Grid className="image-container">
+              <img src={item.img} />
             </Grid>
           </Grid>
         ))}
