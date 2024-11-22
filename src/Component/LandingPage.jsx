@@ -39,7 +39,11 @@ export const LandingPage = () => {
   return (
     <Grid
       sx={{
-        padding: { xs: "10px", sm: "10px 40px", md: "40px 80px 0 80px" },
+        padding: {
+          xs: "80px 30px 30px 30px",
+          sm: "100px 20px 30px 20px",
+          md: "100px 80px 0 80px",
+        },
         background: "#eff1f5",
       }}
     >

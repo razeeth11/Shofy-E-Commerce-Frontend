@@ -1,8 +1,25 @@
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import KeyboardDoubleArrowLeftRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowLeftRounded";
+import KeyboardDoubleArrowRightRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowRightRounded";
 import { Button, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export const TopPicks = () => {
+  const scrollRef = useRef(null);
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({
+      left: -450,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({
+      left: 450,
+      behavior: "smooth",
+    });
+  };
   const topPicksCategories = [
     {
       img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FxXHLYZr%2Fclothing-5.png&w=384&q=75",
@@ -42,11 +59,12 @@ export const TopPicks = () => {
       transition={{ duration: 1 }}
     >
       <Grid
+        ref={scrollRef}
         sx={{
           display: "flex",
           alignItems: "center",
           gap: "20px",
-          padding: { xs: "30px 0" },
+          padding: { xs: "100px 0 30px 0" },
           overflowY: "hidden",
           overflowX: "scroll",
           "&::-webkit-scrollbar": {
@@ -97,6 +115,26 @@ export const TopPicks = () => {
             </Grid>
           </Grid>
         ))}
+      </Grid>
+      <Grid sx={{ display: "flex", justifyContent: "center" }}>
+        <KeyboardDoubleArrowLeftRoundedIcon
+          onClick={() => scrollLeft()}
+          sx={{
+            fontSize: "50px",
+            color: "lightgrey",
+            cursor: "pointer",
+            "&:hover": { color: "#821f40" },
+          }}
+        />
+        <KeyboardDoubleArrowRightRoundedIcon
+          onClick={() => scrollRight()}
+          sx={{
+            fontSize: "50px",
+            color: "lightgrey",
+            cursor: "pointer",
+            "&:hover": { color: "#821f40" },
+          }}
+        />
       </Grid>
     </motion.div>
   );

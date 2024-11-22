@@ -31,8 +31,12 @@ export const NavBar = () => {
       <Grid
         className="flexContainerJustify"
         sx={{
+          position: "fixed",
+          width: "100%",
+          zIndex: 1000,
           padding: matchessm ? "10px" : matchesmd ? "10px 40px" : "10px 80px",
           border: "1.5px solid rgba(1,15,28,.2)",
+          background: "white",
         }}
       >
         <Grid className="flexContainerBasicRow" sx={{ gap: "30px" }}>
