@@ -135,7 +135,7 @@ export const ShopByPopular = () => {
                   width: "220px",
                   height: "270px",
                   flexShrink: 0,
-                  backgroundColor: "rgba(1,15,28,.08)",
+                  backgroundColor: "#eff1f5",
                 }}
               >
                 <Box

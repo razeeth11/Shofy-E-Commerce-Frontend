@@ -40,7 +40,7 @@ export const LandingPage = () => {
     <Grid
       sx={{
         padding: { xs: "10px", sm: "10px 40px", md: "40px 80px 0 80px" },
-        background: "#eff0ed",
+        background: "#eff1f5",
       }}
     >
       <motion.div

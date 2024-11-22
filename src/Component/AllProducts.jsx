@@ -10,13 +10,13 @@ export const AllProducts = () => {
   const [productSelect, setProductSelect] = useState(0);
   const [hoverIndex, setHoverIndex] = useState(null);
   const absoluteIconStyles = {
-    background: "white",
+    background: "#a0a2a4",
     padding: "8px",
     fontSize: "25px",
     borderRadius: "50%",
     cursor: "pointer",
+    color: "white",
     "&:hover": {
-      color: "white",
       background: "#821f40",
       transition: "400ms",
     },
@@ -114,7 +114,7 @@ export const AllProducts = () => {
               >
                 <Box
                   sx={{
-                    background: "rgba(1,15,28,.08)",
+                    background: "#eff1f5",
                     width: "300px",
                     height: "330px",
                     position: "relative",

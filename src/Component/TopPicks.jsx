@@ -62,7 +62,7 @@ export const TopPicks = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              background: "rgba(1,15,28,.08)",
+              background: "#eff1f5",
               maxWidth: "500px",
               paddingLeft: "40px",
             }}
