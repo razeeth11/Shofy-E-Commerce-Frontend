@@ -1,10 +1,26 @@
 import BlurOnIcon from "@mui/icons-material/BlurOn";
-import { Box, Grid, Link, Rating, Typography } from "@mui/material";
+import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
+import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
+import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+import { Box, Grid, Link, Rating, Tooltip, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
 export const AllProducts = () => {
   const [productSelect, setProductSelect] = useState(0);
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const absoluteIconStyles = {
+    background: "white",
+    padding: "8px",
+    fontSize: "25px",
+    borderRadius: "50%",
+    cursor: "pointer",
+    "&:hover": {
+      color: "white",
+      background: "#821f40",
+      transition: "400ms",
+    },
+  };
   return (
     <Grid>
       <motion.div
@@ -88,6 +104,8 @@ export const AllProducts = () => {
           >
             {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
               <Box
+                onMouseEnter={() => setHoverIndex(index)}
+                onMouseLeave={() => setHoverIndex(null)}
                 key={index}
                 sx={{
                   display: "flex",
@@ -96,9 +114,10 @@ export const AllProducts = () => {
               >
                 <Box
                   sx={{
-                    background: "#eff0ed",
+                    background: "rgba(1,15,28,.08)",
                     width: "300px",
                     height: "330px",
+                    position: "relative",
                   }}
                   className="image-container"
                 >
@@ -116,6 +135,33 @@ export const AllProducts = () => {
                       "https://shofy-client.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslider-2.e9d51783.png&w=640&q=75"
                     }
                   />
+                  <Box
+                    sx={{
+                      visibility: hoverIndex == index ? "visible" : "hidden",
+                      opacity: hoverIndex === index ? 1 : 0,
+                      transform:
+                        hoverIndex === index
+                          ? "translateX(0)"
+                          : "translateX(-20px)",
+                      transition: "opacity 0.5s ease, transform 0.5s ease",
+                      position: "absolute",
+                      top: "20px",
+                      left: "15px",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "10px",
+                    }}
+                  >
+                    <Tooltip title="Wishlist" placement="right">
+                      <FavoriteBorderRoundedIcon sx={absoluteIconStyles} />
+                    </Tooltip>
+                    <Tooltip title="Add to Cart" placement="right">
+                      <ShoppingBagOutlinedIcon sx={absoluteIconStyles} />
+                    </Tooltip>
+                    <Tooltip title="Quick View" placement="right">
+                      <RemoveRedEyeOutlinedIcon sx={absoluteIconStyles} />
+                    </Tooltip>
+                  </Box>
                 </Box>
                 <Box sx={{ padding: "15px 15px 15px 5px" }}>
                   <Typography
