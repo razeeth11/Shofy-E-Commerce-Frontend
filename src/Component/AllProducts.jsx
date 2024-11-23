@@ -8,19 +8,57 @@ import { useState } from "react";
 
 export const AllProducts = () => {
   const [productSelect, setProductSelect] = useState(0);
-  const [hoverIndex, setHoverIndex] = useState(null);
-  const absoluteIconStyles = {
-    background: "#a0a2a4",
-    padding: "8px",
-    fontSize: "25px",
-    borderRadius: "50%",
-    cursor: "pointer",
-    color: "white",
-    "&:hover": {
-      background: "#821f40",
-      transition: "400ms",
+  const [allProductList, setAllProductList] = useState([
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
     },
-  };
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      category: "whitetails,Clothing,Womens",
+      name: "Whitetails Womens Dress",
+      cost: "90",
+    },
+  ]);
+
   return (
     <Grid>
       <motion.div
@@ -102,118 +140,133 @@ export const AllProducts = () => {
               mt: 10,
             }}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-              <Box
-                onMouseEnter={() => setHoverIndex(index)}
-                onMouseLeave={() => setHoverIndex(null)}
-                key={index}
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{
-                    background: "#eff1f5",
-                    width: "300px",
-                    height: "330px",
-                    position: "relative",
-                  }}
-                  className="image-container"
-                >
-                  <img
-                    style={{
-                      margin: "10px auto",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      objectFit: "cover",
-                      width: "180px",
-                      height: "300px",
-                    }}
-                    src={
-                      "https://shofy-client.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fslider-2.e9d51783.png&w=640&q=75"
-                    }
-                  />
-                  <Box
-                    sx={{
-                      visibility: hoverIndex == index ? "visible" : "hidden",
-                      opacity: hoverIndex === index ? 1 : 0,
-                      transform:
-                        hoverIndex === index
-                          ? "translateX(0)"
-                          : "translateX(-20px)",
-                      transition: "opacity 0.5s ease, transform 0.5s ease",
-                      position: "absolute",
-                      top: "20px",
-                      left: "15px",
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: "10px",
-                    }}
-                  >
-                    <Tooltip title="Wishlist" placement="right">
-                      <FavoriteBorderRoundedIcon sx={absoluteIconStyles} />
-                    </Tooltip>
-                    <Tooltip title="Add to Cart" placement="right">
-                      <ShoppingBagOutlinedIcon sx={absoluteIconStyles} />
-                    </Tooltip>
-                    <Tooltip title="Quick View" placement="right">
-                      <RemoveRedEyeOutlinedIcon sx={absoluteIconStyles} />
-                    </Tooltip>
-                  </Box>
-                </Box>
-                <Box sx={{ padding: "15px 15px 15px 5px" }}>
-                  <Typography
-                    sx={{
-                      fontSize: "14px",
-                      color: "#a0a2a4",
-                      textTransform: "capitalize",
-                    }}
-                  >
-                    whitetails,Clothing,Womens
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: "18px",
-                      color: "#666666",
-                      fontWeight: 500,
-                      textTransform: "capitalize",
-                    }}
-                  >
-                    Whitetails Womens Dress
-                  </Typography>
-                  <Box>
-                    <Rating name="read-only" value={3.5} readOnly />
-                  </Box>
-                  <Box
-                    sx={{ display: "flex", alignItems: "center", gap: "5px" }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: "18px",
-                        fontWeight: 500,
-                      }}
-                    >
-                      $80.00
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontSize: "12px",
-                        color: "#a0a2a4",
-                        fontWeight: 400,
-                        textDecoration: "line-through",
-                      }}
-                    >
-                      $76.00
-                    </Typography>
-                  </Box>
-                </Box>
-              </Box>
-            ))}
+            <AllProductsList productList={allProductList} />
           </Grid>
         </Grid>
       </motion.div>
     </Grid>
+  );
+};
+
+export const AllProductsList = ({ productList }) => {
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const absoluteIconStyles = {
+    background: "#a0a2a4",
+    padding: "8px",
+    fontSize: "25px",
+    borderRadius: "50%",
+    cursor: "pointer",
+    color: "white",
+    "&:hover": {
+      background: "#821f40",
+      transition: "400ms",
+    },
+  };
+  return (
+    <>
+      {productList?.map((item, index) => (
+        <Box
+          onMouseEnter={() => setHoverIndex(index)}
+          onMouseLeave={() => setHoverIndex(null)}
+          key={index}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Box
+            sx={{
+              background: "#eff1f5",
+              width: "300px",
+              height: "330px",
+              position: "relative",
+            }}
+            className="image-container"
+          >
+            <img
+              style={{
+                margin: "10px auto",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                objectFit: "cover",
+                maxWidth: "180px",
+                height: "300px",
+              }}
+              src={item.img}
+            />
+            <Box
+              sx={{
+                visibility: hoverIndex == index ? "visible" : "hidden",
+                opacity: hoverIndex === index ? 1 : 0,
+                transform:
+                  hoverIndex === index ? "translateX(0)" : "translateX(-20px)",
+                transition: "opacity 0.5s ease, transform 0.5s ease",
+                position: "absolute",
+                top: "20px",
+                left: "15px",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              <Tooltip title="Wishlist" placement="right">
+                <FavoriteBorderRoundedIcon sx={absoluteIconStyles} />
+              </Tooltip>
+              <Tooltip title="Add to Cart" placement="right">
+                <ShoppingBagOutlinedIcon sx={absoluteIconStyles} />
+              </Tooltip>
+              <Tooltip title="Quick View" placement="right">
+                <RemoveRedEyeOutlinedIcon sx={absoluteIconStyles} />
+              </Tooltip>
+            </Box>
+          </Box>
+          <Box sx={{ padding: "15px 15px 15px 5px" }}>
+            <Typography
+              sx={{
+                fontSize: "14px",
+                color: "#a0a2a4",
+                textTransform: "capitalize",
+              }}
+            >
+              {item?.category}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "18px",
+                color: "#666666",
+                fontWeight: 500,
+                textTransform: "capitalize",
+              }}
+            >
+              {item?.name}
+            </Typography>
+            <Box>
+              <Rating name="read-only" value={3.5} readOnly />
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
+              <Typography
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: 500,
+                }}
+              >
+                $ {item?.cost}
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  color: "#a0a2a4",
+                  fontWeight: 400,
+                  textDecoration: "line-through",
+                }}
+              >
+                $ 76.00
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      ))}
+    </>
   );
 };

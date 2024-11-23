@@ -5,6 +5,8 @@ import { LandingPage } from "./Component/LandingPage";
 import { NavBar } from "./Component/NavBar";
 import { ShopByPopular } from "./Component/ShopByPopular";
 import { TopPicks } from "./Component/TopPicks";
+import { TrendingProducts } from "./Component/TrendingProducts";
+import { WeekBestSeller } from "./Component/WeekBestSeller";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <TopPicks />
       <ShopByPopular />
       <AllProducts />
+      <WeekBestSeller />
+      <TrendingProducts />
     </Grid>
   );
 }

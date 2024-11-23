@@ -27,23 +27,8 @@ export const ShopByPopular = () => {
       cost: "90",
     },
     {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FSQY6zdb%2Fshoes-5.png&w=384&q=75",
-      text: "Bags",
-      cost: "90",
-    },
-    {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fgg9yCwX%2Fclothing-1.png&w=384&q=75",
-      text: "Footwear",
-      cost: "90",
-    },
-    {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FDKJr0w4%2Fclothing-9.png&w=384&q=75",
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
       text: "Clothing",
-      cost: "90",
-    },
-    {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FGvXjssF%2Fbag-1.png&w=384&q=75",
-      text: "Bags",
       cost: "90",
     },
     {
@@ -52,23 +37,53 @@ export const ShopByPopular = () => {
       cost: "90",
     },
     {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FSQY6zdb%2Fshoes-5.png&w=384&q=75",
-      text: "Bags",
-      cost: "90",
-    },
-    {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fgg9yCwX%2Fclothing-1.png&w=384&q=75",
-      text: "Footwear",
-      cost: "90",
-    },
-    {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FDKJr0w4%2Fclothing-9.png&w=384&q=75",
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
       text: "Clothing",
       cost: "90",
     },
     {
-      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FGvXjssF%2Fbag-1.png&w=384&q=75",
-      text: "Bags",
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
+      cost: "90",
+    },
+    {
+      img: "https://shofy-client.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FThxGY6N%2Fclothing-13.png&w=384&q=75",
+      text: "Clothing",
       cost: "90",
     },
   ];
