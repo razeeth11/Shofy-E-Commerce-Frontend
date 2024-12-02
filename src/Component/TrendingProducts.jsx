@@ -1,8 +1,6 @@
 import KeyboardDoubleArrowLeftRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowLeftRounded";
 import KeyboardDoubleArrowRightRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowRightRounded";
 import { Button, Grid, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { AllProductsList } from "./AllProducts";
@@ -71,8 +69,6 @@ export const TrendingProducts = () => {
       behavior: "smooth",
     });
   };
-  const theme = useTheme();
-  const matches1000 = useMediaQuery(theme.breakpoints.down(1000));
 
   return (
     <motion.div

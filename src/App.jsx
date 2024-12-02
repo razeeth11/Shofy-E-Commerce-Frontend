@@ -3,6 +3,7 @@ import "./App.css";
 import { AllProducts } from "./Component/AllProducts";
 import { LandingPage } from "./Component/LandingPage";
 import { NavBar } from "./Component/NavBar";
+import { ReviewSection } from "./Component/ReviewsSection";
 import { ShopByPopular } from "./Component/ShopByPopular";
 import { TopPicks } from "./Component/TopPicks";
 import { TrendingProducts } from "./Component/TrendingProducts";
@@ -18,6 +19,7 @@ function App() {
       <AllProducts />
       <WeekBestSeller />
       <TrendingProducts />
+      <ReviewSection />
     </Grid>
   );
 }
